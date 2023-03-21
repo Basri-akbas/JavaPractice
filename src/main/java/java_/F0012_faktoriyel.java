@@ -28,5 +28,15 @@ public class F0012_faktoriyel {
         //Lambda
         int fak=IntStream.rangeClosed(1,sayi).reduce(1,(x,y)->x*y);
         System.out.println(sayi+" nin faktoriyeli "+fak);
+
+        //Andere Lösung
+        System.out.println(FirstFactorial(sayi));
+    }
+    public static int FirstFactorial(int num) {
+        if (num == 0 || num == 1) {
+            return 1;
+        } else {
+            return num * FirstFactorial(num - 1);
+        }
     }
 }
