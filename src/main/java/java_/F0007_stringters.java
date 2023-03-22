@@ -1,5 +1,8 @@
 package java_;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Scanner;
 
 public class F0007_stringters {
@@ -22,6 +25,8 @@ public class F0007_stringters {
         System.out.println("-----------------");
         scan.close();
         System.out.println(FirstReverse(kelime));
+
+
 
     }
     public static String FirstReverse(String str) {
