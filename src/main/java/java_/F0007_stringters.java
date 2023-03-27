@@ -22,11 +22,9 @@ public class F0007_stringters {
             System.out.print(kelime.charAt(i));
         }
 
-        System.out.println("-----------------");
+        System.out.println(" ");
         scan.close();
         System.out.println(FirstReverse(kelime));
-
-
 
     }
     public static String FirstReverse(String str) {
