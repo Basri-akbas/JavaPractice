@@ -1,5 +1,7 @@
 package java_;
 
+import java.util.Arrays;
+
 public class cozulmeyen {
 
      /*
@@ -12,5 +14,8 @@ public class cozulmeyen {
 
 	output : { 3, 5+1, 2+7+9, 2+3+5+7 }
 
+
+
 	   */
+
 }
