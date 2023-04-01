@@ -14,6 +14,7 @@ public class F0002_uglynumber {
         scan.close();
     }
 
+
     public static void checkUglyNumber(int inputNumber)
     {
         int num = inputNumber;
