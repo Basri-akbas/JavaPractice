@@ -16,7 +16,7 @@ public class F0036 {
         int ar2[]=new int[ar1.length];
 
 
-        Comparable<Arrays> arr=ar1.
+     /*   Comparable<Arrays> arr=ar1.
         for(int i=0;i<ar1.length;i++) {
             int sum=0;
             for(int j=0;j<ar1[i].length;j++) {
@@ -26,7 +26,7 @@ public class F0036 {
         }
 
         System.out.println(Arrays.toString(ar2));
-
+*/
     }
 
 
