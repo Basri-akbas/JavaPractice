@@ -1,5 +1,10 @@
 package codeSignal;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class F00012_sortByHeight {
 
     /*
@@ -26,4 +31,33 @@ Guaranteed constraints:
 
 Sorted array a with all the trees untouched.
      */
+
+    public static void main(String[] args) {
+
+        int[]a= {23, 54, -1, 43, 1, -1, -1, 77, -1, -1, -1, 3};
+
+        Arrays.stream(solution(a)).forEach(x-> System.out.print(x+","));
+
+    }
+
+    public static int[] solution(int[] a) {
+
+        List<Integer> heights = new ArrayList<>();
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != -1) {
+                heights.add(a[i]);
+            }
+        }
+
+        Collections.sort(heights);
+
+        int j = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != -1) {
+                a[i] = heights.get(j);
+                j++;
+            }
+        }
+        return a;
+    }
 }
